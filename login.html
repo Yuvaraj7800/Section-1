@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+
+        :root{
+            --theme-color: rgb(133, 0, 170);
+        }
+
+        *{
+            font-family: Montserrat;
+        }
+
+        .mycard{
+            /* border: 2px solid red; */
+            background-color: white;
+            width: 20%;
+            padding: 50px;
+            box-sizing: border-box;
+            /* box-shadow : x-offset y-offset blur size color */
+            /* text-shadow : x-offset y-offset blur color */
+            box-shadow: 6px 10px 5px 0 #00000073;
+            border-left: 3px solid var(--theme-color);
+        }
+
+        body{
+            /* background-color: #ccc; */
+            /* background-image: linear-gradient(135deg, #c3c3ff, #ffabab, #ffff9a); */
+            background-image: url('https://img.freepik.com/free-photo/workspace-with-office-supplies_140725-23268.jpg?w=2000');
+
+            /* background-image: linear-gradient(135deg, #000000be, #000000ba),
+            url('https://img.freepik.com/free-photo/workspace-with-office-supplies_140725-23268.jpg?w=2000'); */
+
+            background-size: cover;
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .title{
+            text-align: center;
+            font-size: 30px;
+            font-family: Montserrat;
+        }
+
+        .myinput , .mybtn , .mylink1 , .mylink2 {
+            display: block;
+        }
+
+        .myinput{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 2px solid gray;
+            background-color: #80808035;
+        }
+
+        .mybtn{
+            background-color: var(--theme-color);
+            width: 100%;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .mylink1{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--theme-color);
+        }
+
+        .mylink2{
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--theme-color);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="mycard">
+
+        <h3 class="title">Login</h3>
+
+        <form>
+            <input class="myinput" type="email" placeholder="Enter Email Address">
+            <input class="myinput" type="password" placeholder="Enter Password">
+
+            <button class="mybtn">Submit</button>
+        </form>
+
+        <a href="" class="mylink1">or Signup</a>
+        <a href="" class="mylink2">Forgot Password</a>
+
+
+    </div>
+
+</body>
+</html>
